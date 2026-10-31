@@ -1,0 +1,7 @@
+<div class="status-container">
+  <span class="indicator" [class.racing]="isOnline" [class.pits]="!isOnline"></span>
+  <span class="status-text">Track Status: <strong>{{ isOnline ? 'Green Flag (Racing)' : 'In Pits' }}</strong></span>
+  <button (click)="toggleStatus()" class="toggle-btn">
+    Toggle Status
+  </button>
+</div>

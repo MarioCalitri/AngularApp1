@@ -1,0 +1,15 @@
+<main class="dashboard-wrapper">
+  
+  <h1>Driver Profile Dashboard</h1>
+  <div class="dashboard-container">
+    <app-user-card [user]="currentUser"></app-user-card>
+    <app-user-status 
+      [isOnline]="currentUser.isRacing" 
+      (statusChanged)="handleStatusChange($event)">
+    </app-user-status>
+    <app-user-bio 
+      [bio]="currentUser.bio" 
+      (bioUpdated)="handleBioUpdate($event)">
+    </app-user-bio>
+  </div>
+</main>

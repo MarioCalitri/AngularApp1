@@ -1,0 +1,15 @@
+<div class="bio-card">
+  <h3>Driver Biography</h3>
+  <div *ngIf="!isEditing; else editMode">
+    <p class="bio-text">{{ bio || 'No driver biography provided yet.' }}</p>
+    <button (click)="startEdit()" class="edit-btn">Edit Bio</button>
+  </div>
+  
+  <ng-template #editMode>
+    <textarea [(ngModel)]="tempBio" rows="4" class="bio-textarea"></textarea>
+    <div class="btn-group">
+      <button (click)="saveBio()" class="save-btn">Save Bio</button>
+      <button (click)="cancelEdit()" class="cancel-btn">Cancel</button>
+    </div>
+  </ng-template>
+</div>

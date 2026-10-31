@@ -1,1 +1,28 @@
-/* You can add global styles to this file, and also import other style files */
+body, app-root {
+  min-height: 100vh;
+  margin: 0;
+  background-color: #0b0c10;
+  background-image: 
+    linear-gradient(45deg, #15161a 25%, transparent 25%),
+    linear-gradient(-45deg, #15161a 25%, transparent 25%),
+    linear-gradient(45deg, transparent 75%, #15161a 75%),
+    linear-gradient(-45deg, transparent 75%, #15161a 75%);
+  background-size: 40px 40px;
+  background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
+}
+
+/* Force styles on the main dashboard card */
+.main-dashboard-card {
+  background-color: #1a1d28 !important;
+  border: 2px solid #e63946 !important;
+  border-radius: 12px !important;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.9), 0 0 20px rgba(230, 57, 70, 0.4) !important;
+  padding: 20px !important;
+}
+
+/* Make inner section cards stand out inside it */
+.main-dashboard-card > div,
+.main-dashboard-card section {
+  background-color: #10121a !important;
+  border: 1px solid #2a2e3d !important;
+}

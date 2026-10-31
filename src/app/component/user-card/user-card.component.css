@@ -1,0 +1,62 @@
+.user-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 1rem;
+  background: #0f0f13;
+  color: #fff;
+  padding: 1.25rem;
+  border-radius: 12px;
+  border: 3px solid #27273a;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.5);
+}
+
+.avatar-container {
+  position: relative;
+  width: 100%;
+}
+
+.avatar {
+  width: 100%;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+  border: 2px solid #e11d48;
+  display: block;
+}
+
+img {
+  width: 100%;
+  height: 180px; /* or whatever height fits your card */
+  object-fit: cover; /* this crops the sides instead of squishing the whole photo */
+  object-position: center;
+}
+
+.car-badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background: #e11d48;
+  color: white;
+  font-weight: 800;
+  font-size: 1rem;
+  padding: 4px 10px;
+  border-radius: 6px;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.6);
+}
+
+.user-info {
+  text-align: center;
+  width: 100%;
+}
+
+.user-info h2 {
+  margin: 0 0 0.25rem 0;
+  font-size: 1.5rem;
+}
+
+.meta {
+  margin: 0;
+  color: #a1a1aa;
+  font-size: 0.95rem;
+}
