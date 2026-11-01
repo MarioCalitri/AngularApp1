@@ -1,3 +1,23 @@
+@font-face {
+  font-family: 'SpeedRacing';
+  src: url('/assets/fonts/SpeedRacing.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'SpeedPhreak';
+  src: url('/assets/fonts/speedphreakxtracondital.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+@font-face {
+  font-family: 'Speens';
+  src: url('/fonts/SPEENS_.TTF') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+
 body, app-root {
   min-height: 100vh;
   margin: 0;
@@ -11,7 +31,7 @@ body, app-root {
   background-position: 0 0, 0 20px, 20px -20px, -20px 0px;
 }
 
-/* Force styles on the main dashboard card */
+/*  main dashboard card */
 .main-dashboard-card {
   background-color: #1a1d28 !important;
   border: 2px solid #e63946 !important;
@@ -25,4 +45,18 @@ body, app-root {
 .main-dashboard-card section {
   background-color: #10121a !important;
   border: 1px solid #2a2e3d !important;
+}
+
+body {
+  background-color: #121212;
+  background-image: 
+    linear-gradient(45deg, #1e1e1e 25%, transparent 25%), 
+    linear-gradient(-45deg, #1e1e1e 25%, transparent 25%), 
+    linear-gradient(45deg, transparent 75%, #1e1e1e 75%), 
+    linear-gradient(-45deg, transparent 75%, #1e1e1e 75%);
+  background-size: 60px 60px;
+  background-position: 0 0, 0 30px, 30px -30px, -30px 0px;
+  color: #ffffff;
+  margin: 0;
+  min-height: 100vh;
 }

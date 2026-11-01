@@ -3,14 +3,17 @@
   margin: 3rem auto;
   padding: 0 1rem;
 }
+
 h1 {
   text-align: center;
   margin-bottom: 2rem;
   color: #f43f5e;
-  font-weight: 800;
+  font-family: 'SpeedPhreak', sans-serif !important;
+  font-size: 60px;  
   letter-spacing: 0.05em;
-  text-transform: uppercase;
 }
+
+
 .dashboard-container {
   background: #121218;
   padding: 2rem;
@@ -25,16 +28,11 @@ h1 {
   box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5), 0 0 15px rgba(230, 57, 70, 0.1);
 }
 
-/* Target your main card wrapper */
+/* main card wrapper */
 .card, .dashboard-card, div[class*="card"] {
-  /* Solid dark backdrop so the checkered background doesn't bleed through */
   background-color: #161822 !important; 
-  
-  /* Sharp contrast border */
   border: 2px solid #e63946 !important; 
   border-radius: 12px;
-
-  /* Neon red glow & heavy drop shadow to lift it off the background */
   box-shadow: 
     0 12px 40px rgba(0, 0, 0, 0.8), 
     0 0 25px rgba(230, 57, 70, 0.35) !important;
